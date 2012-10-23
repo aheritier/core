@@ -32,7 +32,7 @@
 
    <groupId>org.exoplatform.core</groupId>
    <artifactId>core-parent</artifactId>
-   <version>2.5.0-CR2-SNAPSHOT</version>
+   <version>2.6.0-Alpha1-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <name>eXo Core</name>
@@ -40,9 +40,9 @@
 
    <properties>
       <exo.product.name>exo-core</exo.product.name>
-      <exo.product.specification>2.4</exo.product.specification>
+      <exo.product.specification>2.6</exo.product.specification>
       
-      <org.exoplatform.kernel.version>2.4.0-CR2-SNAPSHOT</org.exoplatform.kernel.version>
+      <org.exoplatform.kernel.version>2.5.0-Alpha1-SNAPSHOT</org.exoplatform.kernel.version>
 
       <!-- Plugins updates -->
       <version.source.plugin>2.1.2</version.source.plugin>
@@ -224,7 +224,6 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>4.1.6.Final</version>
-
              <exclusions> 
                <exclusion>
                   <groupId>org.slf4j</groupId>
@@ -266,6 +265,7 @@
             <artifactId>pdfbox</artifactId>
             <version>1.6.0</version>
          </dependency>
+         
          <dependency>
             <groupId>org.htmlparser</groupId>
             <artifactId>htmlparser</artifactId>
@@ -380,12 +380,14 @@
               </exclusion>
            </exclusions>
         </dependency>
+        
         <dependency>
            <groupId>xml-apis</groupId>
            <artifactId>xml-apis</artifactId>
            <version>1.0.b2</version>
            <scope>compile</scope>
         </dependency>
+        
         <dependency>
            <groupId>org.apache.pdfbox</groupId>
            <artifactId>jempbox</artifactId>
@@ -413,20 +415,24 @@
            <version>3.1.0.GA</version>
            <scope>test</scope>
         </dependency>
+        
       </dependencies>
    </dependencyManagement>
 
    <dependencies>
+   
       <dependency>
          <groupId>junit</groupId>
          <artifactId>junit</artifactId>
          <scope>test</scope>
       </dependency>
+      
       <dependency>
          <groupId>org.slf4j</groupId>
          <artifactId>slf4j-log4j12</artifactId>
          <scope>test</scope>
       </dependency>
+      
    </dependencies>
 
 </project>
